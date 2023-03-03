@@ -2,3 +2,17 @@
 
 # rake db:rollback to rollback migrate files, change or add data then migrate it again.
 # Alt, create a new migrate file using      rake db:create_migration NAME=add..."whatever you (no quotes.)wanna add"....then change it there
+
+
+
+# desc 'open console'
+# task :console do
+#     Pry.start
+# end
+# Rem the above will be used to 'Pry'....added in envr.rb     after adding 
+# desc "Runs a Pry console"
+# task :console do
+#   ActiveRecord::Base.logger = Logger.new(STDOUT)
+  
+#   Pry.start
+# end     in the rake file

@@ -22,7 +22,7 @@ product3 = Product.create(name: "Dust", price: 5)
 product4 = Product.create(name: "BPens", price: 2)
 product5 = Product.create(name: "Duct Tape", price: 3)
 
-puts "Creating reviews..."
+puts "CreatiEmployeeng reviews..."
 
 review1 = Review.create(star_rating: 5, comment: "Good product", user_id: user1.id, product_id: product1.id)
 review2 = Review.create(star_rating: 4, comment: "It broke in a day", user_id: user1.id, product_id: product2.id)
