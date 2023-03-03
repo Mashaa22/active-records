@@ -12,18 +12,18 @@ user2 = User.create(name: Faker::Name.name)
 user3 = User.create(name: Faker::Name.name)
 
 puts "Creating products..."
-product1 = Product.create(name: "Stapler", price: 10)
-product2 = Product.create(name: "Whiteboard", price: 15)
-product3 = Product.create(name: "Dry Erase Markers", price: 5)
-product4 = Product.create(name: "Ballpoint Pens", price: 2)
-product5 = Product.create(name: "Scotch Tape", price: 3)
+product1 = Product.create(name: "Staples", price: 10)
+product2 = Product.create(name: "Chalks", price: 15)
+product3 = Product.create(name: "Dust", price: 5)
+product4 = Product.create(name: "BPens", price: 2)
+product5 = Product.create(name: "Duct Tape", price: 3)
 
 puts "Creating reviews..."
 
-review1 = Review.create(star_rating: 5, comment: "Awesome product", user_id: user1.id, product_id: product1.id)
-review2 = Review.create(star_rating: 4, comment: "Loved it", user_id: user1.id, product_id: product2.id)
-review3 = Review.create(star_rating: 2, comment: "Not worth the money", user_id: user2.id, product_id: product4.id)
-review4 = Review.create(star_rating: 3, comment: "Average", user_id: user2.id, product_id: product3.id)
+review1 = Review.create(star_rating: 5, comment: "Good product", user_id: user1.id, product_id: product1.id)
+review2 = Review.create(star_rating: 4, comment: "It broke in a day", user_id: user1.id, product_id: product2.id)
+review3 = Review.create(star_rating: 2, comment: "Awsome", user_id: user2.id, product_id: product4.id)
+review4 = Review.create(star_rating: 3, comment: "Satisfied", user_id: user2.id, product_id: product3.id)
 
 
 

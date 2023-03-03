@@ -1,10 +1,10 @@
-ENV['RACK_ENV'] ||= 'development'
+ENV['RACK_ENV'] ||= "development"
 
+# Require in Gems
 require 'bundler/setup'
-
 Bundler.require(:default, ENV['RACK_ENV'])
 
+require 'active_record'
+# Require in all files in 'app' directory
+require_all 'app'
 
-require_relative "../app/models/product.rb"
-require_relative "../app/models/user.rb"
-require_relative "../app/models/review.rb"
