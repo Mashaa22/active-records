@@ -1,0 +1,4 @@
+# Rem class is singular..."in   .rb file" but table is plural "in    migrations files"
+
+# rake db:rollback to rollback migrate files, change or add data then migrate it again.
+# Alt, create a new migrate file using      rake db:create_migration NAME=add..."whatever you (no quotes.)wanna add"....then change it there

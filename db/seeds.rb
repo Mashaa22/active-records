@@ -11,9 +11,9 @@ puts "Creating users..."
 # user1 = User.create(name: Faker::Name.name)
 # user2 = User.create(name: Faker::Name.name)
 # user3 = User.create(name: Faker::Name.name)
-user1 = User.create(name: "Kinuzs 1")
-user2 = User.create(name: "Kinuzs 2")
-user3 = User.create(name: "Kinuzs 3")
+user1 = User.create(name: "Kinuzs 1" email:sjdhsd@gmail.com)
+user2 = User.create(name: "Kinuzs 2" email:sjdhsd@gmail.com)
+user3 = User.create(name: "Kinuzs 3" email:sjdhsd@gmail.com)
 
 puts "Creating products..."
 product1 = Product.create(name: "Staples", price: 10)

@@ -6,6 +6,7 @@ gem "rake"
 gem 'railties'
 gem "sqlite3", "~> 1.4"
 gem "require_all"
+gem "pry"
 
 group :development do
 
