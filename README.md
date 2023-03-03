@@ -33,4 +33,4 @@ Here is the link [articles.][video](https://watch.screencastify.com/v/kuzyKXobT8
     - +25412345678
 
 ## License
-Licenced under the [MT-licence]() Copyright (c) 2023 **Alex Maranga
+Licenced under the [MT-licence](https://github.com/Mashaa22/active-records/blob/main/license) Copyright (c) 2023 **Alex Maranga
