@@ -1,30 +1,30 @@
 require 'faker'
 
-puts "seed file  🌱"
 
-50.times do 
+puts "Deleting old data..."
+Product.destroy_all
+User.destroy_all
+Review.destroy_all
 
-    user = User.create(
-        name: Faker::Name.name,
-        email: Faker::Internet.email
-    )
+puts "Creating users..."
+user1 = User.create(name: Faker::Name.name)
+user2 = User.create(name: Faker::Name.name)
+user3 = User.create(name: Faker::Name.name)
 
-    product = Product.create(
-        name: Faker::Commerce.product_name,
-        price: rand(20..99)
-    )
+puts "Creating products..."
+product1 = Product.create(name: "Stapler", price: 10)
+product2 = Product.create(name: "Whiteboard", price: 15)
+product3 = Product.create(name: "Dry Erase Markers", price: 5)
+product4 = Product.create(name: "Ballpoint Pens", price: 2)
+product5 = Product.create(name: "Scotch Tape", price: 3)
 
-    rand(5..8).times do
-        Review.create(
-            comment: Faker::Lorem.sentence,
-            star_rating: rand(1..5),
-            user_id: user.id,
-            product_id: product.id
-        )
-    end
+puts "Creating reviews..."
 
+review1 = Review.create(star_rating: 5, comment: "Awesome product", user_id: user1.id, product_id: product1.id)
+review2 = Review.create(star_rating: 4, comment: "Loved it", user_id: user1.id, product_id: product2.id)
+review3 = Review.create(star_rating: 2, comment: "Not worth the money", user_id: user2.id, product_id: product4.id)
+review4 = Review.create(star_rating: 3, comment: "Average", user_id: user2.id, product_id: product3.id)
 
-end
 
 
 puts "completed🌱"
